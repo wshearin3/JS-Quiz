@@ -19,12 +19,17 @@ console.log("Quiz")
 // There is a timer in the top right counting down
 
 // When an answer is selected wrong or correct is presented along with the next question
+document.getElementById("main").style.display = "none";
+document.getElementById("footer").style.display = "none";
+
 var startQuiz = document.querySelector("#introButton")
 
 startQuiz.addEventListener("click", function(){
 timeLeft();
 document.getElementById("introduction").style.display = "none";
 document.getElementById("introButton").style.display = "none";
+document.getElementById("main").style.display = "";
+document.getElementById("footer").style.display = "";
 }
 )
 
