@@ -68,7 +68,7 @@ answerFourQuestionOne.addEventListener("click" , function(){
  console.log("wrong");
 }
 );
-        
+//TODO CALL QUESTION 2 Function here (write questionTwo function)       
 }
 
 var timerElement = document.querySelector(".time");
