@@ -1,3 +1,9 @@
 main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
