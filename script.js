@@ -32,8 +32,13 @@ function timeLeft () {
         if (timeRemaining===0) {
             clearInterval(timerDisplay);
             timerElement.textContent = "TIME'S UP!";
+            //TODO Create Function that brings up dialog box to enter initials and call below
+            //enterInitials();
         }
     }, 1000);
 }
 
+// function enterInitials(){
+
+// }
 timeLeft();
