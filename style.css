@@ -30,6 +30,9 @@ main {
 ul {
     list-style-type: none;
 }
+#buttonOne {
+    padding: 5px;
+}
 footer {
     border-top: 2px solid black;
     font-size: 1rem;

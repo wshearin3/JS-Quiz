@@ -20,6 +20,7 @@ console.log("Quiz")
 
 // When an answer is selected wrong or correct is presented along with the next question
 
+
 var timerElement = document.querySelector(".time");
 
 var timeRemaining = 5;
