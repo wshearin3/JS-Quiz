@@ -23,7 +23,8 @@ var startQuiz = document.querySelector("#introButton")
 
 startQuiz.addEventListener("click", function(){
 timeLeft();
-
+document.getElementById("introduction").style.display = "none";
+document.getElementById("introButton").style.display = "none";
 }
 )
 
