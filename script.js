@@ -19,3 +19,11 @@ console.log("Quiz")
 // There is a timer in the top right counting down
 
 // When an answer is selected wrong or correct is presented along with the next question
+
+var timerElement = document.querySelector(".time");
+
+var timeRemaining = 60;
+
+function timeLeft () {
+    
+}
