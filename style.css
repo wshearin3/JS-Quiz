@@ -1,11 +1,14 @@
 main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+header {
+    padding-bottom: 10px;
+}
 header h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
+    padding-bottom: 10px;
 }
 header h6 {
     
@@ -17,11 +20,9 @@ header h5 {
     display: flex;
     display: inline;
 }
-
 .top{
     display: flex;
     flex-direction: row;
-    margin-bottom: 5px;
     justify-content: space-between;
 }
 footer {
