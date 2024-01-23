@@ -22,8 +22,18 @@ console.log("Quiz")
 
 var timerElement = document.querySelector(".time");
 
-var timeRemaining = 60;
+var timeRemaining = 5;
 
 function timeLeft () {
-    
+    var timerDisplay = setInterval(function() {
+        timeRemaining--;
+        timerElement.textContent = "Time Left: " + timeRemaining;
+
+        if (timeRemaining===0) {
+            clearInterval(timerDisplay);
+            timerElement.textContent = "TIME'S UP!";
+        }
+    }, 1000);
 }
+
+timeLeft();
