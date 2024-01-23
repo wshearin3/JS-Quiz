@@ -22,15 +22,49 @@ console.log("Quiz")
 document.getElementById("main").style.display = "none";
 document.getElementById("footer").style.display = "none";
 
-var startQuiz = document.querySelector("#introButton")
+var startQuiz = document.querySelector("#introButton");
 
 startQuiz.addEventListener("click", function(){
 timeLeft();
 document.getElementById("introduction").style.display = "none";
 document.getElementById("introButton").style.display = "none";
 document.getElementById("main").style.display = "";
+//TODO Call questionOne function here
 }
 )
+
+function questionOne () {
+
+
+var answerOneQuestionOne = document.querySelector("#buttonOne");
+var answerTwoQuestionOne = document.querySelector("#buttonTwo");
+var answerThreeQuestionOne = document.querySelector("#buttonThree");
+var answerFourQuestionOne = document.querySelector("#buttonFour");
+
+answerOneQuestionOne.addEventListener("click", function(){
+//TODO add what happens when correct answer is chosen
+//10 points are added to score in local storage
+//Next question appears
+//Footer displays Correct
+}
+);
+answerTwoQuestionOne.addEventListener("click" , function(){
+//TODO add what happens when incorrect answer is chosen
+//Time is subtracted
+//Next question appears
+//Footer displays Wrong
+}
+);
+answerThreeQuestionOne.addEventListener("click" , function(){
+ //TODO add what happens when incorrect answer is chosen
+}
+);
+answerFourQuestionOne.addEventListener("click" , function(){
+ //TODO add what happens when incorrect answer is chosen
+}
+);
+        
+}
 
 var timerElement = document.querySelector(".time");
 
