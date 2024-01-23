@@ -19,7 +19,13 @@ console.log("Quiz")
 // There is a timer in the top right counting down
 
 // When an answer is selected wrong or correct is presented along with the next question
+var startQuiz = document.querySelector("#introButton")
 
+startQuiz.addEventListener("click", function(){
+timeLeft();
+
+}
+)
 
 var timerElement = document.querySelector(".time");
 
@@ -42,4 +48,4 @@ function timeLeft () {
 // function enterInitials(){
 
 // }
-timeLeft();
+//
