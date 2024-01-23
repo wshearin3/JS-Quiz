@@ -30,6 +30,7 @@ document.getElementById("introduction").style.display = "none";
 document.getElementById("introButton").style.display = "none";
 document.getElementById("main").style.display = "";
 //TODO Call questionOne function here
+questionOne();
 }
 )
 
@@ -46,6 +47,7 @@ answerOneQuestionOne.addEventListener("click", function(){
 //10 points are added to score in local storage
 //Next question appears
 //Footer displays Correct
+console.log("right");
 }
 );
 answerTwoQuestionOne.addEventListener("click" , function(){
@@ -53,14 +55,17 @@ answerTwoQuestionOne.addEventListener("click" , function(){
 //Time is subtracted
 //Next question appears
 //Footer displays Wrong
+console.log("wrong");
 }
 );
 answerThreeQuestionOne.addEventListener("click" , function(){
  //TODO add what happens when incorrect answer is chosen
+ console.log("wrong");
 }
 );
 answerFourQuestionOne.addEventListener("click" , function(){
  //TODO add what happens when incorrect answer is chosen
+ console.log("wrong");
 }
 );
         
