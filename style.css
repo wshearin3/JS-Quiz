@@ -7,8 +7,20 @@ header h1 {
     display: flex;
     justify-content: center;
 }
-header h6{
-    display: flex;
+header h6 {
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: right;
+    
 } 
+header h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    display: inline;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
