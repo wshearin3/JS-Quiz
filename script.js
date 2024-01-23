@@ -29,7 +29,6 @@ timeLeft();
 document.getElementById("introduction").style.display = "none";
 document.getElementById("introButton").style.display = "none";
 document.getElementById("main").style.display = "";
-document.getElementById("footer").style.display = "";
 }
 )
 
