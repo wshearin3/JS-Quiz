@@ -59,7 +59,7 @@ main {
 ul {
     list-style-type: none;
 }
-#buttonOne {
+/* #buttonOne {
     padding: 5px;
     font-size: 15px;
     border-radius: 7px;
@@ -72,9 +72,9 @@ ul {
 }
 #buttonOne:active {
     color: black;
-    font-weight: bold;
-}
-#buttonTwo {
+    font-weight: bold; 
+}*/
+/* #buttonTwo {
     padding: 5px;
     font-size: 15px;
     border-radius: 7px;
@@ -88,8 +88,25 @@ ul {
 #buttonTwo:active {
     color: black;
     font-weight: bold;
+} */
+
+[type="button"]{
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    margin-bottom: 3px;
 }
-#buttonThree {
+.button:hover {
+    background-color: blue;
+    color: whitesmoke;
+}
+.button:active {
+    color: black;
+    font-weight: bold;
+}
+
+/* #buttonThree {
     padding: 5px;
     font-size: 15px;
     border-radius: 7px;
@@ -118,7 +135,7 @@ ul {
 #buttonFour:active {
     color: black;
     font-weight: bold;
-}
+} */
 footer {
     border-top: 2px solid black;
     font-size: 1rem;
