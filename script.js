@@ -53,6 +53,7 @@ answerOneQuestionOne.textContent = "( )";
 answerTwoQuestionOne.textContent = "[ ]";
 answerThreeQuestionOne.textContent = "< >";
 answerFourQuestionOne.textContent = "{ }";
+document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
 }
 );
 
