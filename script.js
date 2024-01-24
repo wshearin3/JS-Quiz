@@ -13,6 +13,7 @@ console.log("Quiz")
 // When an answer is selected wrong or correct is presented along with the next question
 document.getElementById("main").style.display = "none";
 document.getElementById("footer").style.display = "none";
+document.getElementById("questionNumberTwo").style.display = "none";
 
 var startQuiz = document.querySelector("#introButton");
 
@@ -45,11 +46,13 @@ localStorage.setItem("score", score);
 //console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
-answerOneQuestionOne.textContent = "  ( )  ";
-answerTwoQuestionOne.textContent = "  [ ]  ";
-answerThreeQuestionOne.textContent = "  < >  ";
-answerFourQuestionOne.textContent = "{ }";
-document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
+// answerOneQuestionOne.textContent = "  ( )  ";
+// answerTwoQuestionOne.textContent = "  [ ]  ";
+// answerThreeQuestionOne.textContent = "  < >  ";
+// answerFourQuestionOne.textContent = "{ }";
+// document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
+document.getElementById("questionNumberOne").style.display = "none";
+document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 
@@ -62,15 +65,18 @@ console.log("wrong");
 console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
-answerOneQuestionOne.textContent = "  ( )  ";
-answerTwoQuestionOne.textContent = "  [ ]  ";
-answerThreeQuestionOne.textContent = "  < >  ";
-answerFourQuestionOne.textContent = "  { }  ";
-document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
-console.log(timeRemaining);
+// answerOneQuestionOne.textContent = "  ( )  ";
+// answerTwoQuestionOne.textContent = "  [ ]  ";
+// answerThreeQuestionOne.textContent = "  < >  ";
+// answerFourQuestionOne.textContent = "  { }  ";
+// document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
 
-//subtract10();
-console.log(timeRemaining);
+// console.log(timeRemaining);
+
+// subtract10();
+// console.log(timeRemaining);
+document.getElementById("questionNumberOne").style.display = "none";
+document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 answerThreeQuestionOne.addEventListener("click" , function(){
@@ -78,11 +84,13 @@ answerThreeQuestionOne.addEventListener("click" , function(){
  console.log("wrong");
  document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
-answerOneQuestionOne.textContent = "  ( )  ";
-answerTwoQuestionOne.textContent = "  [ ]  ";
-answerThreeQuestionOne.textContent = "  < >  ";
-answerFourQuestionOne.textContent = "  { }  ";
-document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
+// answerOneQuestionOne.textContent = "  ( )  ";
+// answerTwoQuestionOne.textContent = "  [ ]  ";
+// answerThreeQuestionOne.textContent = "  < >  ";
+// answerFourQuestionOne.textContent = "  { }  ";
+// document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
+document.getElementById("questionNumberOne").style.display = "none";
+document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 answerFourQuestionOne.addEventListener("click" , function(){
@@ -90,15 +98,18 @@ answerFourQuestionOne.addEventListener("click" , function(){
  console.log("wrong");
  document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
-answerOneQuestionOne.textContent = "  ( )  ";
-answerTwoQuestionOne.textContent = "  [ ]  ";
-answerThreeQuestionOne.textContent = "  < >  ";
-answerFourQuestionOne.textContent = "  { }  ";
-document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
+// answerOneQuestionOne.textContent = "  ( )  ";
+// answerTwoQuestionOne.textContent = "  [ ]  ";
+// answerThreeQuestionOne.textContent = "  < >  ";
+// answerFourQuestionOne.textContent = "  { }  ";
+// document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
+document.getElementById("questionNumberOne").style.display = "none";
+document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 
-//TODO CALL QUESTION 2 Function here (write questionTwo function)       
+//TODO CALL QUESTION 2 Function here (write questionTwo function)  
+
 }
 
 var timerElement = document.querySelector(".time");
