@@ -34,6 +34,9 @@ questionOne();
 }
 )
 
+var score = localStorage.getItem("score") ?? 0;
+
+
 function questionOne () {
 
 
@@ -48,6 +51,7 @@ answerOneQuestionOne.addEventListener("click", function(){
 //Next question appears
 //Footer displays Correct
 console.log("right");
+
 }
 );
 answerTwoQuestionOne.addEventListener("click" , function(){
