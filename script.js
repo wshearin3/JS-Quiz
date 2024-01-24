@@ -67,6 +67,10 @@ answerTwoQuestionOne.textContent = "  [ ]  ";
 answerThreeQuestionOne.textContent = "  < >  ";
 answerFourQuestionOne.textContent = "  { }  ";
 document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
+console.log(timeRemaining);
+
+//subtract10();
+console.log(timeRemaining);
 }
 );
 answerThreeQuestionOne.addEventListener("click" , function(){
@@ -93,13 +97,13 @@ answerFourQuestionOne.textContent = "  { }  ";
 document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
 }
 );
-return;
+
 //TODO CALL QUESTION 2 Function here (write questionTwo function)       
 }
 
 var timerElement = document.querySelector(".time");
 
-var timeRemaining = 5;
+var timeRemaining = 20;
 
 function timeLeft () {
     var timerDisplay = setInterval(function() {
@@ -115,10 +119,13 @@ function timeLeft () {
     }, 1000);
 }
 
-// function addScore (score) {
-// score + 10;
-// localStorage.setItem("score", score);
+// function subtract10 (timeRemaining) {
+//     var updatedTimer = setInterval(function() {
+// getTime
+// timerElement.textContent = "Time Left: " + timeRemaining;
+//     }, 1000);
 // }
+
 
 // function enterInitials(){
 
