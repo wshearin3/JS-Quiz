@@ -33,7 +33,7 @@ document.getElementById("main").style.display = "";
 questionOne();
 }
 )
-
+//TODO see if one score variable is needed or if multiple variables need to be generated
 var score = localStorage.getItem("score") ?? 0;
 
 
