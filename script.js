@@ -41,7 +41,7 @@ answerOneQuestionOne.addEventListener("click", function(){
 //TODO add what happens when correct answer is chosen
 //10 points are added to score in local storage
 //Next question appears
-//Footer displays Correct
+
 console.log("right");
 console.log(score);
 score++;
@@ -49,6 +49,10 @@ localStorage.setItem("score", score);
 console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
+answerOneQuestionOne.textContent = "( )";
+answerTwoQuestionOne.textContent = "[ ]";
+answerThreeQuestionOne.textContent = "< >";
+answerFourQuestionOne.textContent = "{ }";
 }
 );
 
