@@ -38,20 +38,16 @@ var answerThreeQuestionOne = document.querySelector("#buttonThree");
 var answerFourQuestionOne = document.querySelector("#buttonFour");
 
 answerOneQuestionOne.addEventListener("click", function(){
-//TODO add what happens when correct answer is chosen
-//10 points are added to score in local storage
-//Next question appears
-
-console.log("right");
-console.log(score);
+//console.log("right");
+//console.log(score);
 score++;
 localStorage.setItem("score", score);
-console.log(score);
+//console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
-answerOneQuestionOne.textContent = "( )";
-answerTwoQuestionOne.textContent = "[ ]";
-answerThreeQuestionOne.textContent = "< >";
+answerOneQuestionOne.textContent = "  ( )  ";
+answerTwoQuestionOne.textContent = "  [ ]  ";
+answerThreeQuestionOne.textContent = "  < >  ";
 answerFourQuestionOne.textContent = "{ }";
 document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
 }
@@ -64,18 +60,40 @@ answerTwoQuestionOne.addEventListener("click" , function(){
 //Footer displays Wrong
 console.log("wrong");
 console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+answerOneQuestionOne.textContent = "  ( )  ";
+answerTwoQuestionOne.textContent = "  [ ]  ";
+answerThreeQuestionOne.textContent = "  < >  ";
+answerFourQuestionOne.textContent = "  { }  ";
+document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
 }
 );
 answerThreeQuestionOne.addEventListener("click" , function(){
  //TODO add what happens when incorrect answer is chosen
  console.log("wrong");
+ document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+answerOneQuestionOne.textContent = "  ( )  ";
+answerTwoQuestionOne.textContent = "  [ ]  ";
+answerThreeQuestionOne.textContent = "  < >  ";
+answerFourQuestionOne.textContent = "  { }  ";
+document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
 }
 );
 answerFourQuestionOne.addEventListener("click" , function(){
  //TODO add what happens when incorrect answer is chosen
  console.log("wrong");
+ document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+answerOneQuestionOne.textContent = "  ( )  ";
+answerTwoQuestionOne.textContent = "  [ ]  ";
+answerThreeQuestionOne.textContent = "  < >  ";
+answerFourQuestionOne.textContent = "  { }  ";
+document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
 }
 );
+return;
 //TODO CALL QUESTION 2 Function here (write questionTwo function)       
 }
 
