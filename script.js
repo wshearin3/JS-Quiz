@@ -47,6 +47,8 @@ console.log(score);
 score++;
 localStorage.setItem("score", score);
 console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Correct!";
 }
 );
 
@@ -56,6 +58,7 @@ answerTwoQuestionOne.addEventListener("click" , function(){
 //Next question appears
 //Footer displays Wrong
 console.log("wrong");
+console.log(score);
 }
 );
 answerThreeQuestionOne.addEventListener("click" , function(){
