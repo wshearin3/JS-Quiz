@@ -14,6 +14,15 @@ console.log("Quiz")
 document.getElementById("main").style.display = "none";
 document.getElementById("footer").style.display = "none";
 document.getElementById("questionNumberTwo").style.display = "none";
+document.getElementById("questionNumberThree").style.display = "none";
+document.getElementById("questionNumberFour").style.display = "none";
+document.getElementById("questionNumberFive").style.display = "none";
+document.getElementById("questionNumberSix").style.display = "none";
+document.getElementById("questionNumberSeven").style.display = "none";
+document.getElementById("questionNumberEight").style.display = "none";
+document.getElementById("questionNumberNine").style.display = "none";
+document.getElementById("questionNumberTen").style.display = "none";
+
 
 var startQuiz = document.querySelector("#introButton");
 
