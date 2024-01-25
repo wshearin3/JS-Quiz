@@ -59,36 +59,7 @@ main {
 ul {
     list-style-type: none;
 }
-/* #buttonOne {
-    padding: 5px;
-    font-size: 15px;
-    border-radius: 7px;
-    background-color: whitesmoke;
-    margin-bottom: 3px;
-}
-#buttonOne:hover {
-    background-color: blue;
-    color: whitesmoke;
-}
-#buttonOne:active {
-    color: black;
-    font-weight: bold; 
-}*/
-/* #buttonTwo {
-    padding: 5px;
-    font-size: 15px;
-    border-radius: 7px;
-    background-color: whitesmoke;
-    margin-bottom: 3px;
-}
-#buttonTwo:hover {
-    background-color: blue;
-    color: whitesmoke;
-}
-#buttonTwo:active {
-    color: black;
-    font-weight: bold;
-} */
+
 
 [type="button"]{
     padding: 5px;
@@ -107,41 +78,15 @@ ul {
     font-weight: bold;
 }
 
-/* #buttonThree {
-    padding: 5px;
-    font-size: 15px;
-    border-radius: 7px;
-    background-color: whitesmoke;
-    margin-bottom: 3px;
-}
-#buttonThree:hover {
-    background-color: blue;
-    color: whitesmoke;
-}
-#buttonThree:active {
-    color: black;
-    font-weight: bold;
-}
-#buttonFour {
-    padding: 5px;
-    font-size: 15px;
-    border-radius: 7px;
-    background-color: whitesmoke;
-    margin-bottom: 3px;
-}
-#buttonFour:hover {
-    background-color: blue;
-    color: whitesmoke;
-}
-#buttonFour:active {
-    color: black;
-    font-weight: bold;
-} */
 footer {
     border-top: 2px solid black;
     font-size: 1rem;
     font-style: italic;
     padding-top: 0px;
 }
-
+#scoreSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
