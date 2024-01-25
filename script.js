@@ -566,6 +566,15 @@ function timeLeft (score) {
     }, 1000);
 }
 
+var scoreBoard = document.querySelector("#highScoreButton");
+
+scoreBoard.addEventListener("click", function(){
+document.getElementById("main").style.display = "none";
+document.getElementById("footer").style.display = "none";
+document.getElementById("scoreSection").style.display = "";
+}
+);
+
 // function subtract10 (timeRemaining) {
 //     var updatedTimer = setInterval(function() {
 // getTime
