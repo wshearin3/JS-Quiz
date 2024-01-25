@@ -1,16 +1,5 @@
 console.log("Quiz")
 
-// WHEN I answer a question
-// THEN I am presented with another question
-// WHEN I answer a question incorrectly
-// THEN time is subtracted from the clock
-// WHEN all questions are answered or the timer reaches 0
-// THEN the game is over
-// WHEN the game is over
-// THEN I can save my initials and score
-
-
-// When an answer is selected wrong or correct is presented along with the next question
 document.getElementById("main").style.display = "none";
 document.getElementById("footer").style.display = "none";
 document.getElementById("questionNumberTwo").style.display = "none";
@@ -26,7 +15,6 @@ document.getElementById("scoreSection").style.display = "none";
 document.getElementById("warning").style.display = "none";
 
 
-
 var startQuiz = document.querySelector("#introButton");
 
 startQuiz.addEventListener("click", function(){
@@ -34,16 +22,14 @@ timeLeft();
 document.getElementById("introduction").style.display = "none";
 document.getElementById("introButton").style.display = "none";
 document.getElementById("main").style.display = "";
-//TODO Call questionOne function here
 questionOne();
 }
 )
-//TODO see if one score variable is needed or if multiple variables need to be generated
+
 var score = localStorage.getItem("score");
 localStorage.setItem("score", 0);
 
 function questionOne () {
-
 
 var answerOneQuestionOne = document.querySelector("#buttonOne");
 var answerTwoQuestionOne = document.querySelector("#buttonTwo");
@@ -488,9 +474,7 @@ document.getElementById("scoreSection").style.display = "";
 }
 );
 
-
 var hideScoreBoard = document.querySelector("#hideScoreButton");
-
 
 hideScoreBoard.addEventListener("click", function(){
 document.getElementById("highScoreButton").style.display = "";
