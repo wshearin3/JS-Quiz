@@ -48,79 +48,95 @@ var answerThreeQuestionOne = document.querySelector("#buttonThree");
 var answerFourQuestionOne = document.querySelector("#buttonFour");
 
 answerOneQuestionOne.addEventListener("click", function(){
-//console.log("right");
-//console.log(score);
+console.log("right");
+console.log(score);
 score++;
 localStorage.setItem("score", score);
-//console.log(score);
+console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
-// answerOneQuestionOne.textContent = "  ( )  ";
-// answerTwoQuestionOne.textContent = "  [ ]  ";
-// answerThreeQuestionOne.textContent = "  < >  ";
-// answerFourQuestionOne.textContent = "{ }";
-// document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
 document.getElementById("questionNumberOne").style.display = "none";
 document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 
 answerTwoQuestionOne.addEventListener("click" , function(){
-//TODO add what happens when incorrect answer is chosen
-//Time is subtracted
-//Next question appears
-//Footer displays Wrong
 console.log("wrong");
 console.log(score);
 document.getElementById("footer").style.display = "";
-document.getElementById("feedback").textContent = "Wrong!";
-// answerOneQuestionOne.textContent = "  ( )  ";
-// answerTwoQuestionOne.textContent = "  [ ]  ";
-// answerThreeQuestionOne.textContent = "  < >  ";
-// answerFourQuestionOne.textContent = "  { }  ";
-// document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
-
-// console.log(timeRemaining);
-
-// subtract10();
-// console.log(timeRemaining);
+document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberOne").style.display = "none";
 document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 answerThreeQuestionOne.addEventListener("click" , function(){
- //TODO add what happens when incorrect answer is chosen
- console.log("wrong");
- document.getElementById("footer").style.display = "";
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
-// answerOneQuestionOne.textContent = "  ( )  ";
-// answerTwoQuestionOne.textContent = "  [ ]  ";
-// answerThreeQuestionOne.textContent = "  < >  ";
-// answerFourQuestionOne.textContent = "  { }  ";
-// document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
 document.getElementById("questionNumberOne").style.display = "none";
 document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 answerFourQuestionOne.addEventListener("click" , function(){
- //TODO add what happens when incorrect answer is chosen
- console.log("wrong");
- document.getElementById("footer").style.display = "";
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
-// answerOneQuestionOne.textContent = "  ( )  ";
-// answerTwoQuestionOne.textContent = "  [ ]  ";
-// answerThreeQuestionOne.textContent = "  < >  ";
-// answerFourQuestionOne.textContent = "  { }  ";
-// document.querySelector("#questions").textContent = "What symbols should follow when a function is called?";
 document.getElementById("questionNumberOne").style.display = "none";
 document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 
 //TODO CALL QUESTION 2 Function here (write questionTwo function)  
-
+questionTwo ();
 }
+function questionTwo () {
 
+    var answerOneQuestionTwo = document.querySelector("#buttonFive");
+    var answerTwoQuestionTwo = document.querySelector("#buttonSix");
+    var answerThreeQuestionTwo = document.querySelector("#buttonSeven");
+    var answerFourQuestionTwo = document.querySelector("#buttonEight");
+    
+    answerTwoQuestionTwo.addEventListener("click", function(){
+    console.log("right");
+    console.log(score);
+    score++;
+    localStorage.setItem("score", score);
+    console.log(score);
+    document.getElementById("footer").style.display = "";
+    document.getElementById("feedback").textContent = "Correct!";
+    document.getElementById("questionNumberTwo").style.display = "none";
+    document.getElementById("questionNumberThree").style.display = "";
+    }
+    );
+    
+    answerOneQuestionTwo.addEventListener("click" , function(){
+    console.log("wrong");
+    console.log(score);
+    document.getElementById("footer").style.display = "";
+    document.getElementById("feedback").textContent = "Incorrect!";
+    document.getElementById("questionNumberTwo").style.display = "none";
+    document.getElementById("questionNumberThree").style.display = "";
+    }
+    );
+    answerThreeQuestionTwo.addEventListener("click" , function(){
+    console.log("wrong");
+    document.getElementById("footer").style.display = "";
+    document.getElementById("feedback").textContent = "Wrong!";
+    document.getElementById("questionNumberTwo").style.display = "none";
+    document.getElementById("questionNumberThree").style.display = "";
+    }
+    );
+    answerFourQuestionTwo.addEventListener("click" , function(){
+     console.log("wrong");
+     document.getElementById("footer").style.display = "";
+    document.getElementById("feedback").textContent = "Wrong!";
+    document.getElementById("questionNumberTwo").style.display = "none";
+    document.getElementById("questionNumberThree").style.display = "";
+    }
+    );
+}
 var timerElement = document.querySelector(".time");
 
 var timeRemaining = 20;
