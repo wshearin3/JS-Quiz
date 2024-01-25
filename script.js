@@ -431,8 +431,60 @@ document.getElementById("questionNumberEight").style.display = "none";
 document.getElementById("questionNumberNine").style.display = "";
 }
 );
+questionNine();
+}
+
+function questionNine() {
+var answerOneQuestionNine = document.querySelector("#button33");
+var answerTwoQuestionNine = document.querySelector("#button34");
+var answerThreeQuestionNine = document.querySelector("#button35");
+var answerFourQuestionNine = document.querySelector("#button36");
+
+answerThreeQuestionNine.addEventListener("click", function(){
+console.log("right");
+console.log(score);
+score++;
+localStorage.setItem("score", score);
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Correct!";
+document.getElementById("questionNumberNine").style.display = "none";
+document.getElementById("questionNumberTen").style.display = "";
+}
+);
+
+answerOneQuestionNine.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Incorrect!";
+document.getElementById("questionNumberNine").style.display = "none";
+document.getElementById("questionNumberTen").style.display = "";
+}
+);
+answerTwoQuestionNine.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberNine").style.display = "none";
+document.getElementById("questionNumberTen").style.display = "";
+}
+);
+answerFourQuestionNine.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberNine").style.display = "none";
+document.getElementById("questionNumberTen").style.display = "";
+}
+);
 
 }
+
+
+
 //TIMER FUNCTIONS
 var timerElement = document.querySelector(".time");
 
