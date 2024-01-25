@@ -88,8 +88,8 @@ document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 
-//TODO CALL QUESTION 2 Function here (write questionTwo function)  
 questionTwo ();
+
 }
 function questionTwo () {
 
@@ -136,7 +136,255 @@ function questionTwo () {
     document.getElementById("questionNumberThree").style.display = "";
     }
     );
+    questionThree();
 }
+
+function questionThree() {
+
+var answerOneQuestionThree = document.querySelector("#buttonNine");
+var answerTwoQuestionThree = document.querySelector("#button10");
+var answerThreeQuestionThree = document.querySelector("#button11");
+var answerFourQuestionThree = document.querySelector("#button12");
+
+answerFourQuestionThree.addEventListener("click", function(){
+console.log("right");
+console.log(score);
+score++;
+localStorage.setItem("score", score);
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Correct!";
+document.getElementById("questionNumberThree").style.display = "none";
+document.getElementById("questionNumberFour").style.display = "";
+}
+);
+
+answerOneQuestionThree.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Incorrect!";
+document.getElementById("questionNumberThree").style.display = "none";
+document.getElementById("questionNumberFour").style.display = "";
+}
+);
+answerTwoQuestionThree.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberThree").style.display = "none";
+document.getElementById("questionNumberFour").style.display = "";
+}
+);
+answerThreeQuestionThree.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberThree").style.display = "none";
+document.getElementById("questionNumberFour").style.display = "";
+}
+);
+questionFour();
+}
+
+function questionFour() {
+var answerOneQuestionFour = document.querySelector("#button13");
+var answerTwoQuestionFour = document.querySelector("#button14");
+var answerThreeQuestionFour = document.querySelector("#button15");
+var answerFourQuestionFour = document.querySelector("#button16");
+
+answerThreeQuestionFour.addEventListener("click", function(){
+console.log("right");
+console.log(score);
+score++;
+localStorage.setItem("score", score);
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Correct!";
+document.getElementById("questionNumberFour").style.display = "none";
+document.getElementById("questionNumberFive").style.display = "";
+}
+);
+
+answerOneQuestionFour.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Incorrect!";
+document.getElementById("questionNumberFour").style.display = "none";
+document.getElementById("questionNumberFive").style.display = "";
+}
+);
+answerTwoQuestionFour.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberFour").style.display = "none";
+document.getElementById("questionNumberFive").style.display = "";
+}
+);
+answerFourQuestionFour.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberFour").style.display = "none";
+document.getElementById("questionNumberFive").style.display = "";
+}
+);
+questionFive();
+}
+
+function questionFive(){
+var answerOneQuestionFive = document.querySelector("#button17");
+var answerTwoQuestionFive = document.querySelector("#button18");
+var answerThreeQuestionFive = document.querySelector("#button19");
+var answerFourQuestionFive = document.querySelector("#button20");
+
+answerThreeQuestionFive.addEventListener("click", function(){
+console.log("right");
+console.log(score);
+score++;
+localStorage.setItem("score", score);
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Correct!";
+document.getElementById("questionNumberFive").style.display = "none";
+document.getElementById("questionNumberSix").style.display = "";
+}
+);
+
+answerOneQuestionFive.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Incorrect!";
+document.getElementById("questionNumberFive").style.display = "none";
+document.getElementById("questionNumberSix").style.display = "";
+}
+);
+answerTwoQuestionFive.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberFive").style.display = "none";
+document.getElementById("questionNumberSix").style.display = "";
+}
+);
+answerFourQuestionFive.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberFive").style.display = "none";
+document.getElementById("questionNumberSix").style.display = "";
+}
+);
+questionSix();
+}
+
+function questionSix (){
+var answerOneQuestionSix = document.querySelector("#button21");
+var answerTwoQuestionSix = document.querySelector("#button22");
+var answerThreeQuestionSix = document.querySelector("#button23");
+var answerFourQuestionSix = document.querySelector("#button24");
+
+answerOneQuestionSix.addEventListener("click", function(){
+console.log("right");
+console.log(score);
+score++;
+localStorage.setItem("score", score);
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Correct!";
+document.getElementById("questionNumberSix").style.display = "none";
+document.getElementById("questionNumberSeven").style.display = "";
+}
+);
+
+answerTwoQuestionSix.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Incorrect!";
+document.getElementById("questionNumberSix").style.display = "none";
+document.getElementById("questionNumberSeven").style.display = "";
+}
+);
+answerThreeQuestionSix.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberSix").style.display = "none";
+document.getElementById("questionNumberSeven").style.display = "";
+}
+);
+answerFourQuestionSix.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberSix").style.display = "none";
+document.getElementById("questionNumberSeven").style.display = "";
+}
+);
+questionSeven();
+}
+
+function questionSeven(){
+var answerOneQuestionSeven = document.querySelector("#button25");
+var answerTwoQuestionSeven = document.querySelector("#button26");
+var answerThreeQuestionSeven = document.querySelector("#button27");
+var answerFourQuestionSeven = document.querySelector("#button28");
+
+answerFourQuestionSeven.addEventListener("click", function(){
+console.log("right");
+console.log(score);
+score++;
+localStorage.setItem("score", score);
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Correct!";
+document.getElementById("questionNumberSeven").style.display = "none";
+document.getElementById("questionNumberEight").style.display = "";
+}
+);
+
+answerOneQuestionSeven.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Incorrect!";
+document.getElementById("questionNumberSeven").style.display = "none";
+document.getElementById("questionNumberEight").style.display = "";
+}
+);
+answerTwoQuestionSeven.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberSeven").style.display = "none";
+document.getElementById("questionNumberEight").style.display = "";
+}
+);
+answerThreeQuestionSeven.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberSeven").style.display = "none";
+document.getElementById("questionNumberEight").style.display = "";
+}
+);
+
+}
+//TIMER FUNCTIONS
 var timerElement = document.querySelector(".time");
 
 var timeRemaining = 20;
