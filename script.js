@@ -51,11 +51,8 @@ var answerThreeQuestionOne = document.querySelector("#buttonThree");
 var answerFourQuestionOne = document.querySelector("#buttonFour");
 
 answerOneQuestionOne.addEventListener("click", function(){
-console.log("right");
-console.log(score);
 score++;
 localStorage.setItem("score", score);
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberOne").style.display = "none";
@@ -64,8 +61,6 @@ document.getElementById("questionNumberTwo").style.display = "";
 );
 
 answerTwoQuestionOne.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberOne").style.display = "none";
@@ -73,8 +68,6 @@ document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 answerThreeQuestionOne.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberOne").style.display = "none";
@@ -82,8 +75,6 @@ document.getElementById("questionNumberTwo").style.display = "";
 }
 );
 answerFourQuestionOne.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberOne").style.display = "none";
@@ -102,11 +93,8 @@ function questionTwo () {
     var answerFourQuestionTwo = document.querySelector("#buttonEight");
     
     answerTwoQuestionTwo.addEventListener("click", function(){
-    console.log("right");
-    console.log(score);
-    score++;
+        score++;
     localStorage.setItem("score", score);
-    console.log(score);
     document.getElementById("footer").style.display = "";
     document.getElementById("feedback").textContent = "Correct!";
     document.getElementById("questionNumberTwo").style.display = "none";
@@ -115,8 +103,6 @@ function questionTwo () {
     );
     
     answerOneQuestionTwo.addEventListener("click" , function(){
-    console.log("wrong");
-    console.log(score);
     document.getElementById("footer").style.display = "";
     document.getElementById("feedback").textContent = "Incorrect!";
     document.getElementById("questionNumberTwo").style.display = "none";
@@ -124,7 +110,6 @@ function questionTwo () {
     }
     );
     answerThreeQuestionTwo.addEventListener("click" , function(){
-    console.log("wrong");
     document.getElementById("footer").style.display = "";
     document.getElementById("feedback").textContent = "Wrong!";
     document.getElementById("questionNumberTwo").style.display = "none";
@@ -132,8 +117,7 @@ function questionTwo () {
     }
     );
     answerFourQuestionTwo.addEventListener("click" , function(){
-     console.log("wrong");
-     document.getElementById("footer").style.display = "";
+    document.getElementById("footer").style.display = "";
     document.getElementById("feedback").textContent = "Wrong!";
     document.getElementById("questionNumberTwo").style.display = "none";
     document.getElementById("questionNumberThree").style.display = "";
@@ -150,11 +134,8 @@ var answerThreeQuestionThree = document.querySelector("#button11");
 var answerFourQuestionThree = document.querySelector("#button12");
 
 answerFourQuestionThree.addEventListener("click", function(){
-console.log("right");
-console.log(score);
 score++;
 localStorage.setItem("score", score);
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberThree").style.display = "none";
@@ -163,8 +144,6 @@ document.getElementById("questionNumberFour").style.display = "";
 );
 
 answerOneQuestionThree.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberThree").style.display = "none";
@@ -172,8 +151,6 @@ document.getElementById("questionNumberFour").style.display = "";
 }
 );
 answerTwoQuestionThree.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberThree").style.display = "none";
@@ -181,8 +158,6 @@ document.getElementById("questionNumberFour").style.display = "";
 }
 );
 answerThreeQuestionThree.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberThree").style.display = "none";
@@ -199,11 +174,8 @@ var answerThreeQuestionFour = document.querySelector("#button15");
 var answerFourQuestionFour = document.querySelector("#button16");
 
 answerThreeQuestionFour.addEventListener("click", function(){
-console.log("right");
-console.log(score);
 score++;
 localStorage.setItem("score", score);
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberFour").style.display = "none";
@@ -212,8 +184,6 @@ document.getElementById("questionNumberFive").style.display = "";
 );
 
 answerOneQuestionFour.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberFour").style.display = "none";
@@ -221,8 +191,6 @@ document.getElementById("questionNumberFive").style.display = "";
 }
 );
 answerTwoQuestionFour.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberFour").style.display = "none";
@@ -230,8 +198,6 @@ document.getElementById("questionNumberFive").style.display = "";
 }
 );
 answerFourQuestionFour.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberFour").style.display = "none";
@@ -248,11 +214,8 @@ var answerThreeQuestionFive = document.querySelector("#button19");
 var answerFourQuestionFive = document.querySelector("#button20");
 
 answerThreeQuestionFive.addEventListener("click", function(){
-console.log("right");
-console.log(score);
 score++;
 localStorage.setItem("score", score);
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberFive").style.display = "none";
@@ -261,8 +224,6 @@ document.getElementById("questionNumberSix").style.display = "";
 );
 
 answerOneQuestionFive.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberFive").style.display = "none";
@@ -270,8 +231,6 @@ document.getElementById("questionNumberSix").style.display = "";
 }
 );
 answerTwoQuestionFive.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberFive").style.display = "none";
@@ -279,8 +238,6 @@ document.getElementById("questionNumberSix").style.display = "";
 }
 );
 answerFourQuestionFive.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberFive").style.display = "none";
@@ -297,11 +254,8 @@ var answerThreeQuestionSix = document.querySelector("#button23");
 var answerFourQuestionSix = document.querySelector("#button24");
 
 answerOneQuestionSix.addEventListener("click", function(){
-console.log("right");
-console.log(score);
 score++;
 localStorage.setItem("score", score);
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberSix").style.display = "none";
@@ -310,8 +264,6 @@ document.getElementById("questionNumberSeven").style.display = "";
 );
 
 answerTwoQuestionSix.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberSix").style.display = "none";
@@ -319,8 +271,6 @@ document.getElementById("questionNumberSeven").style.display = "";
 }
 );
 answerThreeQuestionSix.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberSix").style.display = "none";
@@ -328,8 +278,6 @@ document.getElementById("questionNumberSeven").style.display = "";
 }
 );
 answerFourQuestionSix.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberSix").style.display = "none";
@@ -346,11 +294,8 @@ var answerThreeQuestionSeven = document.querySelector("#button27");
 var answerFourQuestionSeven = document.querySelector("#button28");
 
 answerFourQuestionSeven.addEventListener("click", function(){
-console.log("right");
-console.log(score);
 score++;
 localStorage.setItem("score", score);
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberSeven").style.display = "none";
@@ -359,8 +304,6 @@ document.getElementById("questionNumberEight").style.display = "";
 );
 
 answerOneQuestionSeven.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberSeven").style.display = "none";
@@ -368,8 +311,6 @@ document.getElementById("questionNumberEight").style.display = "";
 }
 );
 answerTwoQuestionSeven.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberSeven").style.display = "none";
@@ -377,8 +318,6 @@ document.getElementById("questionNumberEight").style.display = "";
 }
 );
 answerThreeQuestionSeven.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberSeven").style.display = "none";
@@ -395,11 +334,8 @@ var answerThreeQuestionEight = document.querySelector("#button31");
 var answerFourQuestionEight = document.querySelector("#button32");
 
 answerTwoQuestionEight.addEventListener("click", function(){
-console.log("right");
-console.log(score);
 score++;
 localStorage.setItem("score", score);
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberEight").style.display = "none";
@@ -408,8 +344,6 @@ document.getElementById("questionNumberNine").style.display = "";
 );
 
 answerOneQuestionEight.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberEight").style.display = "none";
@@ -417,8 +351,6 @@ document.getElementById("questionNumberNine").style.display = "";
 }
 );
 answerThreeQuestionEight.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberEight").style.display = "none";
@@ -426,8 +358,6 @@ document.getElementById("questionNumberNine").style.display = "";
 }
 );
 answerFourQuestionEight.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberEight").style.display = "none";
@@ -444,11 +374,8 @@ var answerThreeQuestionNine = document.querySelector("#button35");
 var answerFourQuestionNine = document.querySelector("#button36");
 
 answerThreeQuestionNine.addEventListener("click", function(){
-console.log("right");
-console.log(score);
 score++;
 localStorage.setItem("score", score);
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberNine").style.display = "none";
@@ -457,8 +384,6 @@ document.getElementById("questionNumberTen").style.display = "";
 );
 
 answerOneQuestionNine.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberNine").style.display = "none";
@@ -466,8 +391,6 @@ document.getElementById("questionNumberTen").style.display = "";
 }
 );
 answerTwoQuestionNine.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberNine").style.display = "none";
@@ -475,8 +398,6 @@ document.getElementById("questionNumberTen").style.display = "";
 }
 );
 answerFourQuestionNine.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberNine").style.display = "none";
@@ -493,11 +414,8 @@ var answerThreeQuestionTen = document.querySelector("#button39");
 var answerFourQuestionTen = document.querySelector("#button40");
 
 answerTwoQuestionTen.addEventListener("click", function(){
-console.log("right");
-console.log(score);
 score++;
 localStorage.setItem("score", score);
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberTen").style.display = "none";
@@ -506,8 +424,6 @@ timeRemaining = 1;
 );
 
 answerOneQuestionTen.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberTen").style.display = "none";
@@ -515,17 +431,13 @@ timeRemaining = 1;
 }
 );
 answerThreeQuestionTen.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberTen").style.display = "none";
-timeRemaing = 1;
+timeRemaining = 1;
 }
 );
 answerFourQuestionTen.addEventListener("click" , function(){
-console.log("wrong");
-console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberTen").style.display = "none";
@@ -554,9 +466,7 @@ function timeLeft (score) {
             localStorage.setItem("initials", initialPrompt);
             console.log(initialPrompt);
             var tials = localStorage.getItem("initials");
-            console.log(tials);
             var scr = localStorage.getItem("score");
-            console.log(scr);
             document.getElementById("highScores").textContent = "Initials - Score: " + tials + " - " + scr;
             document.getElementById("scoreSection").style.display = "";
             document.getElementById("main").style.display = "none";
@@ -591,25 +501,4 @@ document.getElementById("introButton").style.display = "none";
 }
 );
 
-// function togglin () {
-//     var hs = document.getElementById("scoreSection");
-//     if (hs.style.display === "none") {
-//         hs.style.display = "";
-//     } else {
-//         hs.style.display = "none";
-//     }
-// }
 
-// scoreBoard.addEventListener("click", togglin())
-
-// function subtract10 (timeRemaining) {
-//     var updatedTimer = setInterval(function() {
-// getTime
-// timerElement.textContent = "Time Left: " + timeRemaining;
-//     }, 1000);
-// }
-
-
-// function enterInitials(){
-
-// }
