@@ -498,6 +498,8 @@ console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberTen").style.display = "none";
+initialPrompt = prompt("Pleae enter initials to save your score.");
+localStorage.setItem("initials", initialPrompt);
 }
 );
 
@@ -507,6 +509,8 @@ console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberTen").style.display = "none";
+initialPrompt = prompt("Pleae enter initials to save your score.");
+localStorage.setItem("initials", initialPrompt);
 }
 );
 answerThreeQuestionTen.addEventListener("click" , function(){
@@ -515,6 +519,8 @@ console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberTen").style.display = "none";
+initialPrompt = prompt("Pleae enter initials to save your score.");
+localStorage.setItem("initials", initialPrompt);
 }
 );
 answerFourQuestionTen.addEventListener("click" , function(){
@@ -523,6 +529,8 @@ console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberTen").style.display = "none";
+initialPrompt = prompt("Pleae enter initials to save your score.");
+localStorage.setItem("initials", initialPrompt);
 }
 );
 }
@@ -531,22 +539,21 @@ document.getElementById("questionNumberTen").style.display = "none";
 //TIMER FUNCTIONS
 var timerElement = document.querySelector(".time");
 
-var timeRemaining = 6;
+var timeRemaining = 5;
 
 function timeLeft () {
     var timerDisplay = setInterval(function() {
         timeRemaining--;
         timerElement.textContent = "Time Left: " + timeRemaining;
 
-        if (timeRemaining===0) {
-            clearInterval(timerDisplay);
-            timerElement.textContent = "TIME'S UP!";
-            //TODO Create Function that brings up dialog box to enter initials and call below
-            //enterInitials();
+        if (timeRemaining ===0){
+           clearInterval(timerDisplay);
+           timerElement.textContent = "TIME'S UP!"
             var initialPrompt = prompt("Please enter initials to save your score.");
             localStorage.setItem("initials", initialPrompt);
             console.log(initialPrompt);
-        }
+        } 
+        
     }, 1000);
 }
 
