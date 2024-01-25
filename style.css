@@ -92,6 +92,7 @@ ul {
 
 [type="button"]{
     padding: 5px;
+    min-width: 50px;
     font-size: 15px;
     border-radius: 7px;
     background-color: whitesmoke;
