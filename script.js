@@ -531,7 +531,7 @@ document.getElementById("questionNumberTen").style.display = "none";
 //TIMER FUNCTIONS
 var timerElement = document.querySelector(".time");
 
-var timeRemaining = 20;
+var timeRemaining = 6;
 
 function timeLeft () {
     var timerDisplay = setInterval(function() {
@@ -543,6 +543,9 @@ function timeLeft () {
             timerElement.textContent = "TIME'S UP!";
             //TODO Create Function that brings up dialog box to enter initials and call below
             //enterInitials();
+            var initialPrompt = prompt("Please enter initials to save your score.");
+            localStorage.setItem("initials", initialPrompt);
+            console.log(initialPrompt);
         }
     }, 1000);
 }
