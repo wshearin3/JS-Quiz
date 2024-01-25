@@ -501,8 +501,7 @@ console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Correct!";
 document.getElementById("questionNumberTen").style.display = "none";
-initialPrompt = prompt("Pleae enter initials to save your score.");
-localStorage.setItem("initials", initialPrompt);
+timeRemaining = 1;
 }
 );
 
@@ -512,8 +511,7 @@ console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Incorrect!";
 document.getElementById("questionNumberTen").style.display = "none";
-initialPrompt = prompt("Pleae enter initials to save your score.");
-localStorage.setItem("initials", initialPrompt);
+timeRemaining = 1;
 }
 );
 answerThreeQuestionTen.addEventListener("click" , function(){
@@ -522,8 +520,7 @@ console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberTen").style.display = "none";
-initialPrompt = prompt("Pleae enter initials to save your score.");
-localStorage.setItem("initials", initialPrompt);
+timeRemaing = 1;
 }
 );
 answerFourQuestionTen.addEventListener("click" , function(){
@@ -532,8 +529,9 @@ console.log(score);
 document.getElementById("footer").style.display = "";
 document.getElementById("feedback").textContent = "Wrong!";
 document.getElementById("questionNumberTen").style.display = "none";
-initialPrompt = prompt("Pleae enter initials to save your score.");
-localStorage.setItem("initials", initialPrompt);
+// initialPrompt = prompt("Pleae enter initials to save your score.");
+// localStorage.setItem("initials", initialPrompt);
+timeRemaining = 1;
 }
 );
 }
@@ -542,7 +540,7 @@ localStorage.setItem("initials", initialPrompt);
 //TIMER FUNCTIONS
 var timerElement = document.querySelector(".time");
 
-var timeRemaining = 3;
+var timeRemaining = 20;
 
 function timeLeft (score) {
     var timerDisplay = setInterval(function() {
