@@ -22,6 +22,7 @@ document.getElementById("questionNumberSeven").style.display = "none";
 document.getElementById("questionNumberEight").style.display = "none";
 document.getElementById("questionNumberNine").style.display = "none";
 document.getElementById("questionNumberTen").style.display = "none";
+document.getElementById("scoreSection").style.display = "none";
 
 
 var startQuiz = document.querySelector("#introButton");
@@ -539,9 +540,9 @@ localStorage.setItem("initials", initialPrompt);
 //TIMER FUNCTIONS
 var timerElement = document.querySelector(".time");
 
-var timeRemaining = 5;
+var timeRemaining = 3;
 
-function timeLeft () {
+function timeLeft (score) {
     var timerDisplay = setInterval(function() {
         timeRemaining--;
         timerElement.textContent = "Time Left: " + timeRemaining;
@@ -552,6 +553,14 @@ function timeLeft () {
             var initialPrompt = prompt("Please enter initials to save your score.");
             localStorage.setItem("initials", initialPrompt);
             console.log(initialPrompt);
+            var tials = localStorage.getItem("initials");
+            console.log(tials);
+            var scr = localStorage.getItem("score");
+            console.log(scr);
+            document.getElementById("highScores").textContent = "Initials - Score: " + tials + " - " + scr;
+            document.getElementById("scoreSection").style.display = "";
+            document.getElementById("main").style.display = "none";
+            document.getElementById("footer").style.display = "none";
         } 
         
     }, 1000);
