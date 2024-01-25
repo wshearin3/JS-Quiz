@@ -483,6 +483,49 @@ document.getElementById("questionNumberTen").style.display = "";
 
 }
 
+function questionTen() {
+var answerOneQuestionTen = document.querySelector("#button37");
+var answerTwoQuestionTen = document.querySelector("#button38");
+var answerThreeQuestionTen = document.querySelector("#button39");
+var answerFourQuestionTen = document.querySelector("#button40");
+
+answerTwoQuestionTen.addEventListener("click", function(){
+console.log("right");
+console.log(score);
+score++;
+localStorage.setItem("score", score);
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Correct!";
+document.getElementById("questionNumberTen").style.display = "none";
+}
+);
+
+answerOneQuestionTen.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Incorrect!";
+document.getElementById("questionNumberTen").style.display = "none";
+}
+);
+answerThreeQuestionTen.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberTen").style.display = "none";
+}
+);
+answerFourQuestionTen.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberTen").style.display = "none";
+}
+);
+}
 
 
 //TIMER FUNCTIONS
