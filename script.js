@@ -23,6 +23,7 @@ document.getElementById("questionNumberEight").style.display = "none";
 document.getElementById("questionNumberNine").style.display = "none";
 document.getElementById("questionNumberTen").style.display = "none";
 document.getElementById("scoreSection").style.display = "none";
+document.getElementById("warning").style.display = "none";
 
 
 
@@ -586,6 +587,9 @@ var hideScoreBoard = document.querySelector("#hideScoreButton");
 hideScoreBoard.addEventListener("click", function(){
 document.getElementById("highScoreButton").style.display = "";
 document.getElementById("scoreSection").style.display = "none";
+document.getElementById("warning").style.display = "";
+document.getElementById("introduction").style.display = "none";
+document.getElementById("introButton").style.display = "none";
 }
 );
 
