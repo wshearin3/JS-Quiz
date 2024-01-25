@@ -382,6 +382,55 @@ document.getElementById("questionNumberSeven").style.display = "none";
 document.getElementById("questionNumberEight").style.display = "";
 }
 );
+questionEight();
+}
+
+function questionEight(){
+var answerOneQuestionEight = document.querySelector("#button29");
+var answerTwoQuestionEight = document.querySelector("#button30");
+var answerThreeQuestionEight = document.querySelector("#button31");
+var answerFourQuestionEight = document.querySelector("#button32");
+
+answerTwoQuestionEight.addEventListener("click", function(){
+console.log("right");
+console.log(score);
+score++;
+localStorage.setItem("score", score);
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Correct!";
+document.getElementById("questionNumberEight").style.display = "none";
+document.getElementById("questionNumberNine").style.display = "";
+}
+);
+
+answerOneQuestionEight.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Incorrect!";
+document.getElementById("questionNumberEight").style.display = "none";
+document.getElementById("questionNumberNine").style.display = "";
+}
+);
+answerThreeQuestionEight.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberEight").style.display = "none";
+document.getElementById("questionNumberNine").style.display = "";
+}
+);
+answerFourQuestionEight.addEventListener("click" , function(){
+console.log("wrong");
+console.log(score);
+document.getElementById("footer").style.display = "";
+document.getElementById("feedback").textContent = "Wrong!";
+document.getElementById("questionNumberEight").style.display = "none";
+document.getElementById("questionNumberNine").style.display = "";
+}
+);
 
 }
 //TIMER FUNCTIONS
