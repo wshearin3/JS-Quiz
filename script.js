@@ -25,6 +25,7 @@ document.getElementById("questionNumberTen").style.display = "none";
 document.getElementById("scoreSection").style.display = "none";
 
 
+
 var startQuiz = document.querySelector("#introButton");
 
 startQuiz.addEventListener("click", function(){
@@ -568,12 +569,36 @@ function timeLeft (score) {
 
 var scoreBoard = document.querySelector("#highScoreButton");
 
+
 scoreBoard.addEventListener("click", function(){
 document.getElementById("main").style.display = "none";
 document.getElementById("footer").style.display = "none";
 document.getElementById("scoreSection").style.display = "";
+// document.getElementById("highScoreButton").style.display = "none";
+//document.getElementById("hideScoreButton").style.display = "";
 }
 );
+
+
+var hideScoreBoard = document.querySelector("#hideScoreButton");
+
+
+hideScoreBoard.addEventListener("click", function(){
+document.getElementById("highScoreButton").style.display = "";
+document.getElementById("scoreSection").style.display = "none";
+}
+);
+
+// function togglin () {
+//     var hs = document.getElementById("scoreSection");
+//     if (hs.style.display === "none") {
+//         hs.style.display = "";
+//     } else {
+//         hs.style.display = "none";
+//     }
+// }
+
+// scoreBoard.addEventListener("click", togglin())
 
 // function subtract10 (timeRemaining) {
 //     var updatedTimer = setInterval(function() {
@@ -586,4 +611,3 @@ document.getElementById("scoreSection").style.display = "";
 // function enterInitials(){
 
 // }
-//
