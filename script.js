@@ -480,7 +480,7 @@ document.getElementById("questionNumberNine").style.display = "none";
 document.getElementById("questionNumberTen").style.display = "";
 }
 );
-
+questionTen();
 }
 
 function questionTen() {
